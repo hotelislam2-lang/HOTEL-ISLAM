@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>فنادق إسلام – ISLAM Hôtels</title>
+<style>
+:root{--bg:#f7f3ea;--card:#fff;--ink:#14213d;--mut:#5b6478;--gold:#b8892b;--navy:#14213d;--line:#e4dcc8;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#0e1626;--card:#16213a;--ink:#f3ecd8;--mut:#a9b2c6;--gold:#d9a93f;--navy:#0a1120;--line:#2a3756}}
+:root[data-theme="dark"]{--bg:#0e1626;--card:#16213a;--ink:#f3ecd8;--mut:#a9b2c6;--gold:#d9a93f;--navy:#0a1120;--line:#2a3756}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Segoe UI",Tahoma,"Noto Naskh Arabic",Arial,sans-serif;line-height:1.7}
+header{background:var(--navy);color:#f3ecd8;text-align:center;padding:48px 16px 56px;border-bottom:4px solid var(--gold)}
+.logo{font-size:44px;color:var(--gold);line-height:1}
+h1{margin:8px 0 4px;font-size:34px}
+header p{margin:0;color:#cfc7b0}
+.wrap{max-width:980px;margin:0 auto;padding:0 16px}
+.tabs{display:flex;gap:8px;margin:-24px auto 24px;max-width:980px;padding:0 16px}
+.tab{flex:1;border:1px solid var(--line);background:var(--card);color:var(--ink);padding:14px 6px;border-radius:12px;font:inherit;font-weight:700;cursor:pointer;box-shadow:0 4px 12px rgba(0,0,0,.12)}
+.tab small{display:block;font-weight:400;color:var(--mut);font-size:12px}
+.tab[aria-selected="true"]{background:var(--gold);color:#14213d;border-color:var(--gold)}
+.tab[aria-selected="true"] small{color:#14213d}
+.hotel{display:none}.hotel.on{display:block}
+.hero{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px;margin-bottom:20px}
+.hero h2{margin:0 0 6px;color:var(--gold);font-size:26px}
+.stars{color:var(--gold);letter-spacing:3px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.tag{background:var(--bg);border:1px solid var(--line);border-radius:99px;padding:4px 12px;font-size:14px}
+h3{margin:28px 0 12px;font-size:20px;border-right:4px solid var(--gold);padding-right:10px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px}
+.room{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}
+.room b{display:block;font-size:17px}
+.room span{color:var(--mut);font-size:14px}
+.price{margin-top:8px;color:var(--gold);font-size:22px;font-weight:800}
+.price small{font-size:13px;color:var(--mut);font-weight:400}
+.note{background:var(--card);border:1px dashed var(--gold);border-radius:12px;padding:14px 16px;margin-top:16px;font-size:15px}
+.contact{background:var(--navy);color:#f3ecd8;border-radius:14px;padding:18px;margin-top:24px}
+.contact a{color:var(--gold)}
+footer{text-align:center;color:var(--mut);padding:32px 16px;font-size:14px}
+.book{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px;margin-top:28px}
+.fgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.fgrid label{display:flex;flex-direction:column;font-size:14px;color:var(--mut);gap:4px}
+.fgrid .full{grid-column:1/-1}
+.fgrid input,.fgrid select,.fgrid textarea{font:inherit;padding:10px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink)}
+.btn{margin-top:14px;margin-inline-end:8px;padding:12px 20px;border:0;border-radius:10px;background:var(--gold);color:#14213d;font:inherit;font-weight:700;cursor:pointer}
+.btn.alt{background:transparent;border:1px solid var(--gold);color:var(--ink)}
+</style>
+</head>
+<body>
+<header>
+  <div style="text-align:left"><a href="fr.html" style="color:#d9a93f">Français</a></div>
+  <div class="logo">☪ ⌂</div>
+  <h1>فنادق إسلام</h1>
+  <p>ISLAM Hôtels · الجزائر · الراحة والسكينة والعناية</p>
+  <p><a class="btn" href="#book" style="display:inline-block;text-decoration:none">احجز غرفة</a></p>
+</header>
+
+<div class="tabs" role="tablist">
+  <button class="tab" role="tab" data-t="h1" aria-selected="true">إسلام 1<small>ISLAM 1</small></button>
+  <button class="tab" role="tab" data-t="h2" aria-selected="false">إسلام 2<small>ISLAM II</small></button>
+  <button class="tab" role="tab" data-t="h3" aria-selected="false">إسلام 3<small>ISLAM 3</small></button>
+</div>
+
+<main class="wrap">
+
+<!-- ISLAM 1 -->
+<section class="hotel on" id="h1">
+  <div class="hero">
+    <h2>فندق إسلام 1</h2>
+    <div>Hôtel Islem 1 — Hébergement &amp; Services</div>
+    <div class="tags"><span class="tag">أسعار شاملة للرسوم</span><span class="tag">الأسعار لليلة الواحدة</span></div>
+  </div>
+  <h3>أسعار الغرف (لليلة)</h3>
+  <div class="grid">
+    <div class="room"><b>غرفة فردية</b><span>Chambre Single</span><div class="price">3 000 <small>دج</small></div></div>
+    <div class="room"><b>غرفة مزدوجة</b><span>للأزواج المتزوجين فقط</span><div class="price">3 500 <small>دج</small></div></div>
+    <div class="room"><b>غرفة مزدوجة</b><span>Chambre Double</span><div class="price">4 000 <small>دج</small></div></div>
+    <div class="room"><b>غرفة ثلاثية</b><span>Chambre Triple</span><div class="price">4 500 <small>دج</small></div></div>
+    <div class="room"><b>غرفة بـ 4 أسرّة</b><span>Chambre 4 Lits</span><div class="price">6 000 <small>دج</small></div></div>
+    <div class="room"><b>غرفة بـ 5 أسرّة</b><span>Chambre 5 Lits</span><div class="price">7 500 <small>دج</small></div></div>
+  </div>
+  <div class="note"><b>شروط ومعلومات:</b> يلزم دفتر عائلي أو شهادة زواج سارية للأزواج المتزوجين عند التسجيل. الأسعار تشمل جميع رسوم الإقامة المطبقة. أوقات الدخول والخروج حسب النظام الداخلي للفندق.</div>
+</section>
+
+<!-- ISLAM 2 -->
+<section class="hotel" id="h2">
+  <div class="hero">
+    <h2>فندق إسلام 2</h2>
+    <div>Hôtel Islam 02 — Luxe et Familiale · وسط مدينة تلمسان</div>
+    <div class="tags"><span class="tag">🏊 مسبح</span><span class="tag">🍽 مطعم</span><span class="tag">🎤 قاعة مؤتمرات</span><span class="tag">📶 واي فاي</span><span class="tag">🚗 موقف آمن</span><span class="tag">❄ تكييف</span><span class="tag">☕ فطور مشمول</span></div>
+  </div>
+  <h3>الغرف والأجنحة</h3>
+  <div class="grid">
+    <div class="room"><b>غرفة فردية</b><span>شخص واحد</span><div class="price">5 000 <small>دج</small></div></div>
+    <div class="room"><b>غرفة مزدوجة</b><span>شخصان</span><div class="price">7 000 <small>دج</small></div></div>
+    <div class="room"><b>غرفة ثلاثية</b><span>3 أشخاص</span><div class="price">10 500 <small>دج</small></div></div>
+    <div class="room"><b>غرفة عائلية</b><span>سرير كبير + سريران منفصلان</span><div class="price">13 500 <small>دج</small></div></div>
+    <div class="room"><b>جناح فاخر مع تراس</b><span>سرير كبير + 4 أسرّة فردية</span><div class="price">22 000 <small>دج</small></div></div>
+  </div>
+  <div class="note"><b>خيارات إضافية:</b> مرتبة إضافية 1 000 دج · الفطور مشمول في السعر.</div>
+  <div class="contact">
+    📞 <a href="tel:+21344971443">+213 44 97 14 43</a><br>
+    📍 57, Rue Ibn Khamiss, Tlemcen<br>
+    ✉ <a href="mailto:hotel.islam2@gmail.com">hotel.islam2@gmail.com</a>
+  </div>
+</section>
+
+<!-- ISLAM 3 -->
+<section class="hotel" id="h3">
+  <div class="hero">
+    <h2>فندق إسلام 3</h2>
+    <div>Hôtel Islam 3 — Confort · Sérénité · Bien-être</div>
+    <div class="tags"><span class="tag">📶 واي فاي مجاني</span><span class="tag">🚗 موقف آمن</span><span class="tag">☕ فطور مشمول</span><span class="tag">🕒 استقبال 24/24</span><span class="tag">✔ أفضل سعر مضمون</span></div>
+  </div>
+  <h3>أسعار الغرف (الدفع مسبقاً)</h3>
+  <div class="grid">
+    <div class="room"><b>غرفة فردية</b><span>شخص واحد</span><div class="price">5 000 <small>دج</small></div></div>
+    <div class="room"><b>غرفة مزدوجة</b><span>شخصان</span><div class="price">7 000 <small>دج</small></div></div>
+    <div class="room"><b>غرفة ثلاثية</b><span>3 أشخاص</span><div class="price">10 500 <small>دج</small></div></div>
+    <div class="room"><b>غرفة رباعية</b><span>4 أشخاص</span><div class="price">13 500 <small>دج</small></div></div>
+  </div>
+  <h3>خدمات إضافية</h3>
+  <div class="grid">
+    <div class="room"><b>مرتبة إضافية</b><span>للشخص</span><div class="price">1 000 <small>دج</small></div></div>
+    <div class="room"><b>دخول المسبح</b><span>للشخص</span><div class="price">1 000 <small>دج</small></div></div>
+  </div>
+  <div class="note"><b>الدفع مسبقاً:</b> احجز إقامتك بكل طمأنينة.</div>
+</section>
+
+<section id="book" class="book">
+  <h3>طلب حجز غرفة</h3>
+  <div class="fgrid">
+    <label>الفندق<input id="bh" readonly></label>
+    <label>الاسم الكامل<input id="bn"></label>
+    <label>رقم الهاتف<input id="bp" type="tel"></label>
+    <label>نوع الغرفة<select id="br"></select></label>
+    <label>تاريخ الوصول<input id="bi" type="date"></label>
+    <label>تاريخ المغادرة<input id="bo" type="date"></label>
+    <label>عدد الأشخاص<input id="bg" type="number" min="1" value="1"></label>
+    <label class="full">ملاحظات<textarea id="bm" rows="2"></textarea></label>
+  </div>
+  <button type="button" class="btn" id="bs">إرسال الطلب بالبريد</button>
+  <button type="button" class="btn alt" id="bc">نسخ الطلب</button>
+  <p class="note" id="bt" hidden></p>
+</section>
+</main>
+<footer>© فنادق إسلام – ISLAM Hôtels · الجزائر</footer>
+
+<script>
+document.querySelectorAll('.tab').forEach(function(b){
+  b.addEventListener('click',function(){
+    document.querySelectorAll('.tab').forEach(function(x){x.setAttribute('aria-selected','false')});
+    b.setAttribute('aria-selected','true');setHotel(b.dataset.t);
+    document.querySelectorAll('.hotel').forEach(function(h){h.classList.toggle('on',h.id===b.dataset.t)});
+    window.scrollTo({top:0,behavior:'smooth'});
+  });
+});
+var EMAIL='hotel.islam2@gmail.com';
+var HOT={h1:['فندق إسلام 1',['غرفة فردية – 3 000 دج','غرفة مزدوجة (للأزواج المتزوجين) – 3 500 دج','غرفة مزدوجة – 4 000 دج','غرفة ثلاثية – 4 500 دج','غرفة بـ 4 أسرّة – 6 000 دج','غرفة بـ 5 أسرّة – 7 500 دج']],h2:['فندق إسلام 2',['غرفة فردية – 5 000 دج','غرفة مزدوجة – 7 000 دج','غرفة ثلاثية – 10 500 دج','غرفة عائلية – 13 500 دج','جناح فاخر مع تراس – 22 000 دج']],h3:['فندق إسلام 3',['غرفة فردية – 5 000 دج','غرفة مزدوجة – 7 000 دج','غرفة ثلاثية – 10 500 دج','غرفة رباعية – 13 500 دج']]};
+function $(i){return document.getElementById(i)}
+function setHotel(k){$('bh').value=HOT[k][0];$('br').innerHTML=HOT[k][1].map(function(x){return '<option>'+x+'</option>'}).join('')}
+function msg(){
+  var n=$('bn').value.trim(),i=$('bi').value,o=$('bo').value;
+  if(!n||!i||!o){alert('يرجى إدخال الاسم وتاريخي الوصول والمغادرة');return ''}
+  return ['طلب حجز غرفة','الفندق: '+$('bh').value,'الاسم: '+n,'الهاتف: '+$('bp').value,'الغرفة: '+$('br').value,'الوصول: '+i,'المغادرة: '+o,'عدد الأشخاص: '+$('bg').value,'ملاحظات: '+$('bm').value].join('\n');
+}
+$('bs').addEventListener('click',function(){var m=msg();if(!m)return;window.location.href='mailto:'+EMAIL+'?subject='+encodeURIComponent('طلب حجز – '+$('bh').value)+'&body='+encodeURIComponent(m)});
+$('bc').addEventListener('click',function(){var m=msg();if(!m)return;var t=$('bt');t.hidden=false;t.style.whiteSpace='pre-line';t.textContent=m;try{navigator.clipboard.writeText(m)}catch(e){}});
+setHotel('h1');
+</script>
+</body>
+</html>

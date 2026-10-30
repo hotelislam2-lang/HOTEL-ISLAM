@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hôtels ISLAM – Algérie</title>
+<style>
+:root{--bg:#f7f3ea;--card:#fff;--ink:#14213d;--mut:#5b6478;--gold:#b8892b;--navy:#14213d;--line:#e4dcc8;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#0e1626;--card:#16213a;--ink:#f3ecd8;--mut:#a9b2c6;--gold:#d9a93f;--navy:#0a1120;--line:#2a3756}}
+:root[data-theme="dark"]{--bg:#0e1626;--card:#16213a;--ink:#f3ecd8;--mut:#a9b2c6;--gold:#d9a93f;--navy:#0a1120;--line:#2a3756}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Georgia,"Times New Roman",serif;line-height:1.6}
+header{background:var(--navy);color:#f3ecd8;text-align:center;padding:48px 16px 56px;border-bottom:4px solid var(--gold)}
+.logo{font-size:44px;color:var(--gold);line-height:1}
+h1{margin:8px 0 4px;font-size:36px;letter-spacing:2px}
+header p{margin:0;color:#cfc7b0;font-style:italic}
+.wrap{max-width:980px;margin:0 auto;padding:0 16px}
+.tabs{display:flex;gap:8px;margin:-24px auto 24px;max-width:980px;padding:0 16px}
+.tab{flex:1;border:1px solid var(--line);background:var(--card);color:var(--ink);padding:14px 6px;border-radius:12px;font:inherit;font-weight:700;cursor:pointer;box-shadow:0 4px 12px rgba(0,0,0,.12)}
+.tab small{display:block;font-weight:400;color:var(--mut);font-size:12px}
+.tab[aria-selected="true"]{background:var(--gold);color:#14213d;border-color:var(--gold)}
+.tab[aria-selected="true"] small{color:#14213d}
+.hotel{display:none}.hotel.on{display:block}
+.hero{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px;margin-bottom:20px}
+.hero h2{margin:0 0 6px;color:var(--gold);font-size:26px}
+.stars{color:var(--gold);letter-spacing:3px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.tag{background:var(--bg);border:1px solid var(--line);border-radius:99px;padding:4px 12px;font-size:14px}
+h3{margin:28px 0 12px;font-size:20px;border-left:4px solid var(--gold);padding-left:10px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px}
+.room{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}
+.room b{display:block;font-size:17px}
+.room span{color:var(--mut);font-size:14px}
+.price{margin-top:8px;color:var(--gold);font-size:22px;font-weight:800}
+.price small{font-size:13px;color:var(--mut);font-weight:400}
+.note{background:var(--card);border:1px dashed var(--gold);border-radius:12px;padding:14px 16px;margin-top:16px;font-size:15px}
+.contact{background:var(--navy);color:#f3ecd8;border-radius:14px;padding:18px;margin-top:24px}
+.contact a{color:var(--gold)}
+footer{text-align:center;color:var(--mut);padding:32px 16px;font-size:14px}
+.book{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px;margin-top:28px}
+.fgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.fgrid label{display:flex;flex-direction:column;font-size:14px;color:var(--mut);gap:4px}
+.fgrid .full{grid-column:1/-1}
+.fgrid input,.fgrid select,.fgrid textarea{font:inherit;padding:10px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink)}
+.btn{margin-top:14px;margin-inline-end:8px;padding:12px 20px;border:0;border-radius:10px;background:var(--gold);color:#14213d;font:inherit;font-weight:700;cursor:pointer}
+.btn.alt{background:transparent;border:1px solid var(--gold);color:var(--ink)}
+</style>
+</head>
+<body>
+<header>
+  <div style="text-align:right"><a href="index.html" style="color:#d9a93f">العربية</a></div>
+  <div class="logo">☪ ⌂</div>
+  <h1>HÔTELS ISLAM</h1>
+  <p>Algérie · Confort, sérénité, bien-être</p>
+  <p><a class="btn" href="#book" style="display:inline-block;text-decoration:none">Réserver une chambre</a></p>
+</header>
+
+<div class="tabs" role="tablist">
+  <button class="tab" role="tab" data-t="h1" aria-selected="true">ISLAM 1<small>Hébergement</small></button>
+  <button class="tab" role="tab" data-t="h2" aria-selected="false">ISLAM II<small>Tlemcen</small></button>
+  <button class="tab" role="tab" data-t="h3" aria-selected="false">ISLAM 3<small>Paiement à l’avance</small></button>
+</div>
+
+<main class="wrap">
+
+<section class="hotel on" id="h1">
+  <div class="hero">
+    <h2>Hôtel Islam 1</h2>
+    <div>Hébergement &amp; services</div>
+    <div class="tags"><span class="tag">Taxes de séjour incluses</span><span class="tag">Tarifs par nuitée</span></div>
+  </div>
+  <h3>Tarifs des nuitées</h3>
+  <div class="grid">
+    <div class="room"><b>Chambre Single</b><span>1 personne</span><div class="price">3 000 <small>DA</small></div></div>
+    <div class="room"><b>Chambre Double</b><span>Réservée aux couples mariés</span><div class="price">3 500 <small>DA</small></div></div>
+    <div class="room"><b>Chambre Double</b><span>2 personnes</span><div class="price">4 000 <small>DA</small></div></div>
+    <div class="room"><b>Chambre Triple</b><span>3 personnes</span><div class="price">4 500 <small>DA</small></div></div>
+    <div class="room"><b>Chambre 4 lits</b><span>4 personnes</span><div class="price">6 000 <small>DA</small></div></div>
+    <div class="room"><b>Chambre 5 lits</b><span>5 personnes</span><div class="price">7 500 <small>DA</small></div></div>
+  </div>
+  <div class="note"><b>Conditions &amp; informations :</b> le livret de famille ou un certificat de mariage valide est obligatoire à l’enregistrement pour les couples mariés. Les tarifs s’entendent par nuitée et incluent l’ensemble des taxes de séjour applicables. Check-in et check-out selon le règlement intérieur de l’établissement.</div>
+</section>
+
+<section class="hotel" id="h2">
+  <div class="hero">
+    <h2>Hôtel Islam 02</h2>
+    <div>Luxe et familiale · Tlemcen centre-ville, Algérie</div>
+    <div class="tags"><span class="tag">🏊 Piscine</span><span class="tag">🍽 Restaurant</span><span class="tag">🎤 Salle de conférence</span><span class="tag">📶 Wi-Fi gratuit</span><span class="tag">🚗 Parking sécurisé</span><span class="tag">❄ Climatisation</span><span class="tag">☕ Petit déjeuner inclus</span></div>
+  </div>
+  <h3>Nos chambres &amp; suites</h3>
+  <div class="grid">
+    <div class="room"><b>Chambre Single</b><span>1 personne</span><div class="price">5 000 <small>DA</small></div></div>
+    <div class="room"><b>Chambre Double</b><span>2 personnes</span><div class="price">7 000 <small>DA</small></div></div>
+    <div class="room"><b>Chambre Triple</b><span>3 personnes</span><div class="price">10 500 <small>DA</small></div></div>
+    <div class="room"><b>Chambre Familiale</b><span>1 grand lit + 2 lits séparés</span><div class="price">13 500 <small>DA</small></div></div>
+    <div class="room"><b>Suite de luxe avec terrasse</b><span>1 grand lit + 4 lits simples</span><div class="price">22 000 <small>DA</small></div></div>
+  </div>
+  <div class="note"><b>Options supplémentaires :</b> matelas supplémentaire 1 000 DA · petit déjeuner inclus.</div>
+  <div class="contact">
+    📞 <a href="tel:+21344971443">+213 44 97 14 43</a><br>
+    📍 57, Rue Ibn Khamiss, Tlemcen<br>
+    ✉ <a href="mailto:hotel.islam2@gmail.com">hotel.islam2@gmail.com</a><br>
+    <em>Votre confort, notre priorité</em>
+  </div>
+</section>
+
+<section class="hotel" id="h3">
+  <div class="hero">
+    <h2>Hôtel Islam 3</h2>
+    <div>Confort · Sérénité · Bien-être — « Votre séjour commence ici ! »</div>
+    <div class="tags"><span class="tag">📶 Wi-Fi gratuit</span><span class="tag">🚗 Parking sécurisé</span><span class="tag">☕ Petit déjeuner inclus</span><span class="tag">🕒 Réception 24h/24</span><span class="tag">✔ Meilleur tarif garanti</span></div>
+  </div>
+  <h3>Tarifs (paiement à l’avance)</h3>
+  <div class="grid">
+    <div class="room"><b>Chambre Single</b><span>1 personne</span><div class="price">5 000 <small>DA</small></div></div>
+    <div class="room"><b>Chambre Double</b><span>2 personnes</span><div class="price">7 000 <small>DA</small></div></div>
+    <div class="room"><b>Chambre Triple</b><span>3 personnes</span><div class="price">10 500 <small>DA</small></div></div>
+    <div class="room"><b>Chambre Quadruple</b><span>4 personnes</span><div class="price">13 500 <small>DA</small></div></div>
+  </div>
+  <h3>Services supplémentaires</h3>
+  <div class="grid">
+    <div class="room"><b>Matelas supplémentaire</b><span>par personne</span><div class="price">1 000 <small>DA</small></div></div>
+    <div class="room"><b>Accès piscine</b><span>par personne</span><div class="price">1 000 <small>DA</small></div></div>
+  </div>
+  <div class="note"><b>Paiement à l’avance :</b> réservez votre séjour en toute sérénité.</div>
+</section>
+
+<section id="book" class="book">
+  <h3>Demande de réservation</h3>
+  <div class="fgrid">
+    <label>Hôtel<input id="bh" readonly></label>
+    <label>Nom complet<input id="bn"></label>
+    <label>Téléphone<input id="bp" type="tel"></label>
+    <label>Type de chambre<select id="br"></select></label>
+    <label>Date d’arrivée<input id="bi" type="date"></label>
+    <label>Date de départ<input id="bo" type="date"></label>
+    <label>Nombre de personnes<input id="bg" type="number" min="1" value="1"></label>
+    <label class="full">Remarques<textarea id="bm" rows="2"></textarea></label>
+  </div>
+  <button type="button" class="btn" id="bs">Envoyer la demande par e-mail</button>
+  <button type="button" class="btn alt" id="bc">Copier la demande</button>
+  <p class="note" id="bt" hidden></p>
+</section>
+</main>
+<footer>© Hôtels ISLAM · Algérie</footer>
+
+<script>
+document.querySelectorAll('.tab').forEach(function(b){
+  b.addEventListener('click',function(){
+    document.querySelectorAll('.tab').forEach(function(x){x.setAttribute('aria-selected','false')});
+    b.setAttribute('aria-selected','true');setHotel(b.dataset.t);
+    document.querySelectorAll('.hotel').forEach(function(h){h.classList.toggle('on',h.id===b.dataset.t)});
+    window.scrollTo({top:0,behavior:'smooth'});
+  });
+});
+var EMAIL='hotel.islam2@gmail.com';
+var HOT={h1:['Hôtel Islam 1',['Chambre Single – 3 000 DA','Chambre Double (couples mariés) – 3 500 DA','Chambre Double – 4 000 DA','Chambre Triple – 4 500 DA','Chambre 4 lits – 6 000 DA','Chambre 5 lits – 7 500 DA']],h2:['Hôtel Islam 02',['Chambre Single – 5 000 DA','Chambre Double – 7 000 DA','Chambre Triple – 10 500 DA','Chambre Familiale – 13 500 DA','Suite de luxe avec terrasse – 22 000 DA']],h3:['Hôtel Islam 3',['Chambre Single – 5 000 DA','Chambre Double – 7 000 DA','Chambre Triple – 10 500 DA','Chambre Quadruple – 13 500 DA']]};
+function $(i){return document.getElementById(i)}
+function setHotel(k){$('bh').value=HOT[k][0];$('br').innerHTML=HOT[k][1].map(function(x){return '<option>'+x+'</option>'}).join('')}
+function msg(){
+  var n=$('bn').value.trim(),i=$('bi').value,o=$('bo').value;
+  if(!n||!i||!o){alert('Veuillez saisir votre nom et les dates d’arrivée et de départ.');return ''}
+  return ['Demande de réservation','Hôtel : '+$('bh').value,'Nom : '+n,'Téléphone : '+$('bp').value,'Chambre : '+$('br').value,'Arrivée : '+i,'Départ : '+o,'Personnes : '+$('bg').value,'Remarques : '+$('bm').value].join('\n');
+}
+$('bs').addEventListener('click',function(){var m=msg();if(!m)return;window.location.href='mailto:'+EMAIL+'?subject='+encodeURIComponent('Demande de réservation – '+$('bh').value)+'&body='+encodeURIComponent(m)});
+$('bc').addEventListener('click',function(){var m=msg();if(!m)return;var t=$('bt');t.hidden=false;t.style.whiteSpace='pre-line';t.textContent=m;try{navigator.clipboard.writeText(m)}catch(e){}});
+setHotel('h1');
+</script>
+</body>
+</html>
