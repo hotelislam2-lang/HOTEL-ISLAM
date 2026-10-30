@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>أكواد QR – فنادق إسلام</title>
+<style>
+:root{--bg:#f7f3ea;--ink:#14213d;--mut:#5b6478;--gold:#b8892b;--line:#e4dcc8;--card:#fff}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#0e1626;--ink:#f3ecd8;--mut:#a9b2c6;--gold:#d9a93f;--line:#2a3756;--card:#16213a}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Segoe UI",Tahoma,Arial,sans-serif;line-height:1.7;padding:24px 16px}
+.wrap{max-width:980px;margin:0 auto}
+h1{color:var(--gold);margin:0 0 4px}
+p.s{color:var(--mut);margin:0 0 18px}
+.ctl{display:grid;grid-template-columns:2fr 1fr;gap:12px;margin-bottom:20px}
+label{display:flex;flex-direction:column;font-size:14px;color:var(--mut);gap:4px}
+input,select{font:inherit;padding:10px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink);direction:ltr}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;text-align:center}
+.card h2{margin:0 0 10px;font-size:20px}
+.qr{background:#fff;padding:12px;border-radius:12px;display:inline-block;line-height:0}
+.url{direction:ltr;font-size:12px;color:var(--mut);word-break:break-all;margin:10px 0}
+.btn{padding:10px 18px;border:0;border-radius:10px;background:var(--gold);color:#14213d;font:inherit;font-weight:700;cursor:pointer}
+.err{color:#c0392b}
+@media print{.ctl,.btn,p.s{display:none}body{background:#fff;color:#000}.card{break-inside:avoid;border-color:#999}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>أكواد QR لفروع فنادق إسلام</h1>
+  <p class="s">كل فرع له كود QR يفتح صفحته مباشرة. اطبع الصفحة وضع كل كود في الفندق المناسب.</p>
+  <div class="ctl">
+    <label>رابط مجلد الموقع (ينتهي بـ /)<input id="u" type="url" placeholder="https://username.github.io/islam-hotels/"></label>
+    <label>اللغة<select id="l"><option value="index.html">العربية</option><option value="fr.html">Français</option></select></label>
+  </div>
+  <p id="e" class="err" hidden></p>
+  <div class="grid" id="g"></div>
+  <p style="margin-top:20px"><button class="btn" onclick="window.print()">طباعة</button></p>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script>
+var B=[['h1','فندق إسلام 1','Hôtel Islam 1'],['h2','فندق إسلام 2','Hôtel Islam 02'],['h3','فندق إسلام 3','Hôtel Islam 3']];
+function $(i){return document.getElementById(i)}
+var u=$('u'),l=$('l');
+var d=location.href.split('#')[0].split('?')[0].replace(/[^\/]*$/,'');
+if(/^https?:/.test(d))u.value=d;
+function render(){
+  var g=$('g'),e=$('e');g.innerHTML='';e.hidden=true;
+  var base=u.value.trim();
+  if(!/^https?:\/\//.test(base)){e.textContent='أدخل رابط موقعك على GitHub Pages أولاً.';e.hidden=false;return}
+  if(base.slice(-1)!=='/')base+='/';
+  if(typeof QRCode==='undefined'){e.textContent='تعذّر تحميل مكتبة QR. تأكد من اتصال الإنترنت.';e.hidden=false;return}
+  B.forEach(function(b){
+    var url=base+l.value+'#'+b[0];
+    var c=document.createElement('div');c.className='card';
+    c.innerHTML='<h2>'+b[1]+'<br><small>'+b[2]+'</small></h2><div class="qr"></div><div class="url"></div><button class="btn">تحميل PNG</button>';
+    g.appendChild(c);
+    var q=c.querySelector('.qr');
+    new QRCode(q,{text:url,width:220,height:220,correctLevel:QRCode.CorrectLevel.M});
+    c.querySelector('.url').textContent=url;
+    c.querySelector('button').addEventListener('click',function(){
+      var cv=q.querySelector('canvas'),im=q.querySelector('img');
+      var a=document.createElement('a');
+      a.href=cv?cv.toDataURL('image/png'):im.src;
+      a.download='qr-islam-'+b[0]+'.png';
+      document.body.appendChild(a);a.click();a.remove();
+    });
+  });
+}
+u.addEventListener('input',render);l.addEventListener('change',render);
+render();
+</script>
+</body>
+</html>
