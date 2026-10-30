@@ -16,3 +16,7 @@ Site statique (HTML uniquement, aucune dépendance).
 
 - Prix et textes : ouvrez le fichier sur GitHub, cliquez sur le crayon, modifiez, puis Commit.
 - E-mail de réception des demandes de réservation : cherchez `var EMAIL=` dans chaque fichier et remplacez l'adresse.
+
+## Codes QR
+
+Ouvrez `https://VOTRE-NOM.github.io/islam-hotels/qr.html` : l'adresse du site est détectée automatiquement et un code QR est généré pour chaque hôtel (arabe ou français). Boutons « Télécharger PNG » et « Imprimer » inclus. Chaque code ouvre directement la page de l'hôtel (`index.html#h1`, `#h2`, `#h3`).

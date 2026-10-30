@@ -165,6 +165,7 @@ function msg(){
 $('bs').addEventListener('click',function(){var m=msg();if(!m)return;window.location.href='mailto:'+EMAIL+'?subject='+encodeURIComponent('Demande de réservation – '+$('bh').value)+'&body='+encodeURIComponent(m)});
 $('bc').addEventListener('click',function(){var m=msg();if(!m)return;var t=$('bt');t.hidden=false;t.style.whiteSpace='pre-line';t.textContent=m;try{navigator.clipboard.writeText(m)}catch(e){}});
 setHotel('h1');
+var hh=location.hash.slice(1),tb=document.querySelector('.tab[data-t="'+hh+'"]');if(tb)tb.click();
 </script>
 </body>
 </html>
